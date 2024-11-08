@@ -50,21 +50,25 @@
                 </div>
                 <div class="col-md-8">
                     <form>
-                        
+                        <!-- 1. Regular Input Box (Text) for Name -->
                         <div class="mb-3">
                             <label for="name" class="form-label">Name:</label>
                             <input type="text" class="form-control" id="name" required>
                         </div>
+                    
+                        <!-- 1. Regular Input Box (Email) for Email -->
                         <div class="mb-3">
                             <label for="email" class="form-label">Email:</label>
                             <input type="email" class="form-control" id="email" required>
                         </div>
+                    
+                        <!-- 1. Regular Input Box (Tel) for Contact Number -->
                         <div class="mb-3">
                             <label for="contact" class="form-label">Contact Number:</label>
                             <input type="tel" class="form-control" id="contact" required>
                         </div>
-
-                        
+                    
+                        <!-- 2. Radio Buttons for Gender -->
                         <div class="mb-3">
                             <label class="form-label">Gender:</label><br>
                             <div class="form-check form-check-inline">
@@ -76,29 +80,33 @@
                                 <label class="form-check-label" for="genderFemale">Female</label>
                             </div>
                         </div>
-
-                      
+                    
+                        <!-- 3. Checkboxes for Cities to Visit -->
                         <div class="mb-3">
-                            <label class="form-label">Cities you would like to visit in Sarawak</label><br>
+                            <label class="form-label">Cities you would like to visit in Sarawak:</label><br>
+                            
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" id="kuching" value="Kuching">
                                 <label class="form-check-label" for="kuching">Kuching</label>
                             </div>
+                            
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" id="miri" value="Miri">
                                 <label class="form-check-label" for="miri">Miri</label>
                             </div>
+                            
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" id="sibu" value="Sibu">
                                 <label class="form-check-label" for="sibu">Sibu</label>
                             </div>
+                            
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" id="bintulu" value="Bintulu">
                                 <label class="form-check-label" for="bintulu">Bintulu</label>
                             </div>
                         </div>
-
-                       
+                    
+                        <!-- 4. Dropdown List for Race Selection -->
                         <div class="mb-3">
                             <label for="race" class="form-label">Race:</label>
                             <select class="form-select" id="race" required>
@@ -111,21 +119,35 @@
                                 <option value="Orang Ulu">Orang Ulu</option>
                             </select>
                         </div>
-
-                       
+                    
+                        <!-- 5. Date Input for Planned Visit Date -->
+                        <div class="mb-3">
+                            <label for="visitDate" class="form-label">Planned Visit Date:</label>
+                            <input type="date" class="form-control" id="visitDate">
+                        </div>
+                    
+                        <!-- 6. File Upload for Attachments -->
+                        <div class="mb-3">
+                            <label for="attachment" class="form-label">Upload a Photo or File:</label>
+                            <input type="file" class="form-control" id="attachment">
+                        </div>
+                    
+                        <!-- 7. Range Slider for Interest Level -->
+                        <div class="mb-3">
+                            <label for="interestRange" class="form-label">Interest in Visiting Sarawak (1-10):</label>
+                            <input type="range" class="form-range" id="interestRange" min="1" max="10">
+                        </div>
+                    
+                        <!-- Additional Textarea for Message (Optional) -->
                         <div class="mb-3">
                             <label for="message" class="form-label">Message:</label>
                             <textarea class="form-control" id="message" rows="4" required></textarea>
                         </div>
-
-                        
+                    
+                        <!-- Submit Button -->
                         <button type="submit" class="btn btn-danger w-100">SEND</button>
                     </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
+                    
     
     <footer class="bg-secondary text-white text-center py-4 mt-5">
         <div class="container">
